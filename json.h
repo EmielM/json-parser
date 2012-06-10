@@ -166,6 +166,10 @@ typedef struct _json_value
          {  return u.integer;
          }
 
+         inline operator double () const
+         {  return u.dbl;
+         }
+
          inline operator bool () const
          {  return u.boolean != 0;
          }
